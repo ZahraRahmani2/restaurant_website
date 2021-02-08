@@ -1,3 +1,4 @@
+/* content of the page */
 .content {
   max-width: 80%;
   margin: auto;
@@ -5,6 +6,7 @@
   padding: 10px;
 }
 
+/* navbar */
 ul {
   list-style-type: none;
   margin: 0;
@@ -34,17 +36,40 @@ li a:hover:not(.active) {
   background-color: #111;
 }
 
+#shopping-cart {
+	float: right;
+}
+
 .active {
   background-color: #4CAF50;
 }
 
+/* The big image on index.htm */
 #header-image {
   width: 100%;
 }
 
-#shopping-cart {
-	float: right;
+.top-image {
+  position: relative;
 }
+
+.top-image .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Food row images*/
 
 .row {
   display: flex;
@@ -54,6 +79,7 @@ li a:hover:not(.active) {
 .column {
   flex: 33.33%;
   padding: 10px;
+  text-align: center;
 }
 
 .row .column img {
@@ -61,13 +87,29 @@ li a:hover:not(.active) {
 	border-radius: 20%;
 }
 
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* footer styles */
+
 .column1 {
 	float: left;
 	width: 30%;
+	color: white;
+}
+
+.column1 img {
+  max-width: 250px;
+  height: auto;
 }
 
 footer {
 	background-color: #333;
 	height: 300px;
 }
+
 
