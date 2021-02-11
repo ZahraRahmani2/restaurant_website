@@ -11,32 +11,33 @@
 
 </head>
 <body>
-	<!--
-	Fixed Navigation
-	==================================== -->
+
   <div class="content">
-	    <!-- main nav -->
-		<nav>
-      <ul>
+	  <!-- main nav -->
+    <header>
+      <h1>Leaf Restaurant</h1>
+    </header>
+
+  <!-- Header Image -->
+  <div class="top-image">
+    <img id="header-image" src="images/pic1.PNG" />
+    <button class="btn">Order Now</button>
+  </div>
+
+  <nav>
+      <ul>   
         <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#">Menu</a></li>
+        <li><a href="menu.php">Menu</a></li>
         <li><a href="#hours">Hours</a></li>
         <li><a href="#location">Location</a></li>
         <li><a href="#about-us">About Us</a></li>
         <li><a href="#contact-us">Contact Us</a></li>
         <li id="shopping-cart"><a href="#">Shopping Cart</a></li>
       </ul>
-		</nav>
-	    <!-- /main nav -->
-	<!--
-	End Fixed Navigation
-	==================================== -->
-  <div class="top-image">
-    <img id="header-image" src="images/pic1.PNG" />
-    <button class="btn">Order Now</button>
-  </div>
+    </nav>
+      <!-- End of main nav -->
 
-  <!-- food image section section -->
+  <!-- food image section -->
   <div class="row">
     <div class="column">
       <img src="images/food1.PNG" alt="Food1"> <br>
@@ -56,26 +57,27 @@
     </div>
   </div>
 
-  <!-- hours -->
+  <!-- Hours -->
   <div>
     <h3 id="hours">Hours</h3>
     <p>List Monday to Friday open hours 10:00am - 11:00pm.</p>
   </div>
 
-    <!-- about us -->
+  <!-- About us -->
   <div>
     <h3 id="about-us">About Us</h3>
     <p>About the restaurant and everything a customer needs to know.</p>
   </div>
 
  
-    <!-- contact us -->
+  <!-- Contact us -->
   <div>
     <h3 id="contact-us">Contact Us</h3>
     <p>(208) 919 - 3345</p>
   </div>
-
-<footer>
+  
+  <!-- Footer -->
+  <footer>
     <div class="column1">
         <h4>Quick Links</h4>
         <ul>
@@ -87,15 +89,13 @@
           <li><a href="https://twitter.com/vaad_queens" target="_blank"><i class="fa fa-twitter twitter"></i></a></li>
         </ul>
     </div>
-    <div class="column1">
+    <div id="location" class="column1">
       <h4>Location</h4>
       <p>8312 E newdale ave, Nampa, ID.</p>
       <img src="images/map.PNG">
     </div>
 </footer>
-	<!--
-	    Essential Scripts
-	    =====================================-->
+
 </div>
 </body>
 </html>
