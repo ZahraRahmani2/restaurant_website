@@ -1,20 +1,19 @@
-/* content of the page */
-.content {
-  max-width: 80%;
-  margin: auto;
-  background: white;
-  padding: 10px;
+/* body */
+body, ul, li, h1, h2, a {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
 }
-
+/* header */
 header {
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  top: 0;
-  left: 0;
+ background-color: #333;
+ padding: 20px;
+ text-align: center;
+ position: fixed;
+ width: 100%;
+ z-index: 1;
+ top: 0;
+ left: 0;
 }
 
 header h1 {
@@ -22,15 +21,57 @@ header h1 {
   border: 8px solid white;
   padding: 6px 12px;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 36px;
 }
+
+/* banner */
+.banner {
+  position: relative;
+}
+
+.banner img{
+  width: 100%;
+}
+
+.banner .welcome {
+  background-color: #A9A9A9;
+  color: white;
+  position: absolute;
+  padding: 30px;
+  left: 0px;
+  top: 30%;
+}
+
+.banner h1 {
+  font-size: 25px;
+}
+
+.banner .welcome span {
+  font-size: 1.5em;
+}
+
+.banner .btn {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 5px;
+}
+
 /* navbar */
-ul {
+nav {
+  position: sticky;
+  top: 105px;
+}
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #004d00;
 }
 
 nav li {
@@ -42,7 +83,7 @@ li:last-child {
   border-right: none;
 }
 
-li a {
+nav li a {
   display: block;
   color: white;
   text-align: center;
@@ -50,42 +91,26 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
+nav li a:hover {
+  background-color: #003300;
+}
+
+nav li .active {
+  color: #cccc00;
 }
 
 #shopping-cart {
-	float: right;
+  float: right;
 }
 
-.active {
-  background-color: #4CAF50;
-}
+/* main content */
 
-/* The big image on index.htm */
-#header-image {
-  width: 100%;
-}
-
-.top-image {
-  position: relative;
-  top:;
-}
-
-.top-image .btn {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
+main{
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box; 
 }
 
 /* Food row images*/
@@ -94,7 +119,6 @@ li a:hover:not(.active) {
   display: flex;
 }
 
-/* Create three equal columns that sits next to each other */
 .column {
   flex: 33.33%;
   padding: 10px;
@@ -112,29 +136,16 @@ li a:hover:not(.active) {
   }
 }
 
-
 /* footer styles */
-
-.column1 {
-	float: left;
-	width: 30%;
-	color: white;
-}
-
-.column1 img {
-  max-width: 250px;
-  height: auto;
-}
 
 footer {
 	background-color: #333;
-	height: 300px;
+  text-align: center;
+  padding: 60px;
+  color: white;
 }
 
-/* menu.php */
-.menucolumn img{
-    height: 100px;
-    width: 100px;
-}
+
+
 
 

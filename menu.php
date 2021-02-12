@@ -29,19 +29,19 @@
 		</nav>
 	    <!-- /main nav -->
   <section>
-    <div class="column">
+    <div class="menucolumn">
       <img src="images/food1.PNG" alt="Food1"> <br>
       <p> Burger</p>
     </div>
-    <div class="column">
+    <div class="menucolumn">
       <img src="images/Chicken_biryani.PNG" alt="Food2"><br>
       <p> Chicken Biryani</p>
     </div>
-    <div class="column">
+    <div class="menucolumn">
       <img src="images/Spagathti.PNG" alt="Food3"><br>
       <p> Spagathti</p>
     </div>
-    <div class="column">
+    <div class="menucolumn">
       <img src="images/food2.PNG" alt="Food4"><br>
       <p> Falafel</p>
     </div>
