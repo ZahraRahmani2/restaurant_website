@@ -12,9 +12,7 @@
 </head>
 <body>
   <!-- header -->
-  <header>
-    <h1>Leaf Restaurant</h1>
-  </header>
+  <?php include "header.php"; ?>
 
   <!-- Header Image -->
   <section class="banner">
@@ -25,17 +23,7 @@
     <button class="btn">Order Now</button>
   </section>
 
-  <nav class="main-nav">
-      <ul>   
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="menu.php">Menu</a></li>
-        <li><a href="#hours">Hours</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="#about-us">About Us</a></li>
-        <li><a href="#contact-us">Contact Us</a></li>
-        <li id="shopping-cart"><a href="#">Shopping Cart</a></li>
-      </ul>
-    </nav>
+  <?php include "nav.php"; ?>
       <!-- End of main nav -->
 
   <!-- food image section -->
@@ -71,30 +59,17 @@
       <p>About the restaurant and everything a customer needs to know.</p>
     </div>
 
-   
     <!-- Contact us -->
     <div>
       <h3 id="contact-us">Contact Us</h3>
       <p>(208) 919 - 3345</p>
     </div>
-  </main>
+</main>
+   
+
   
   <!-- Footer -->
-  <footer>
-    <h3>Join Us on Social Media</h3>
-    <a href="#">
-         <img alt="Facebook" src="images/Facebook.png">
-    </a>
-        <a href="#">
-         <img alt="twitter" src="images/Twitter.png">
-    </a>
-        <a href="#">
-         <img alt="linkedin" src="images/Linkedin.png">
-    </a>
-        <a href="#">
-         <img alt="instagram" src="images/Instagram.png">
-    </a> 
-  </footer>
+  <?php include "footer.php"; ?>
 
 </div>
 </body>
