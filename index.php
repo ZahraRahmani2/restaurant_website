@@ -65,6 +65,12 @@
       <h3 id="contact-us">Contact Us</h3>
       <p>(208) 919 - 3345</p>
     </div>
+
+    <div>
+      <h3 id="location">Location</h3>
+      <p><a href="https://www.google.com/maps" target="_blank">Here here to see the address</a></p>
+    </div>
+
 </main>
    
 
