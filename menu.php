@@ -4,6 +4,9 @@
   </head>
   <body>
     <?php include "header.php"; ?>
+    <h1 id="food-menu">
+      Food Menu 
+    </h1>
     <div class="content">
       <div class="menucolumn">
         <img src="images/food1.PNG" alt="Food1"> <br>
@@ -25,6 +28,12 @@
         <h2> Falafel</h2>
         <p><strong> $10 </strong></p>
       </div>
+      <button onclick="gohome()">Homepage</button>
+      <script>
+        function gohome() {
+          window.history.back();
+        }
+      </script>
     </div>
     <?php include "footer.php"; ?>
   </body>

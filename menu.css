@@ -1,3 +1,8 @@
+body, ul, li, h1, h2, a {
+  margin: 0;
+  padding: 0;
+}
+
 /* header */
 header {
  background-color: #333;
@@ -16,6 +21,14 @@ header h1 {
   padding: 8px 12px;
   display: inline-block;
   border-radius: 36px;
+}
+
+#food-menu{
+	position: relative;
+	text-align: center;
+	font-size: 3vw;
+	color: #004d00;
+	top: 150px;
 }
 
 .content {
@@ -48,6 +61,19 @@ header h1 {
 	top: 40%;
 }
 
+
+button {
+  background-color: #004d00;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 footer {
 	position: relative;
 	top:145px;
@@ -55,4 +81,8 @@ footer {
 	text-align: center;
 	padding: 60px;
 	color: white;
+}
+
+footer h3 {
+  font-size: 1.3vw;
 }
