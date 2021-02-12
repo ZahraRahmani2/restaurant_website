@@ -1,28 +1,4 @@
-body, ul, li, h1, h2, a {
-  margin: 0;
-  padding: 0;
-}
-
-/* header */
-header {
- background-color: #333;
- padding: 20px;
- text-align: center;
- position: fixed;
- width: 100%;
- z-index: 1;
- top: 0;
- left: 0;
-}
-
-header h1 {
-  color: white;
-  border: 8px solid white;
-  padding: 8px 12px;
-  display: inline-block;
-  border-radius: 36px;
-}
-
+/* Food Menu Content */
 #food-menu{
 	position: relative;
 	text-align: center;
@@ -61,7 +37,7 @@ header h1 {
 	top: 40%;
 }
 
-
+/* Go to Home page button */
 button {
   background-color: #004d00;
   border: none;
@@ -69,10 +45,12 @@ button {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 0.875em;
   cursor: pointer;
   border-radius: 5px;
 }
+
+/* menue page footer */
 
 footer {
 	position: relative;
