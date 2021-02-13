@@ -69,7 +69,7 @@
 
     <div>
       <h3 id="location">Location</h3>
-      <p><a href="https://www.google.com/maps" target="_blank">Here here to see the address</a></p>
+      <p><a href="https://www.google.com/maps" target="_blank">Click here to see the address</a></p>
     </div>
 
 </main>

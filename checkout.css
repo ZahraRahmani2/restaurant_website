@@ -1,0 +1,56 @@
+#Ordersummary {
+	position: relative;
+	text-align: center;
+	font-size: 3vw;
+	color: #004d00;
+}
+
+.checkout-content {
+	position: relative;
+	top: 150px;
+	text-align: center;
+}
+
+.checkout-foods {
+	 border: 2px solid #73AD21;
+	 display: flex;
+}
+.checkout-food{
+	border: 2px solid #73AD21;
+	flex: 1;
+}
+
+.checkout-food:first-child {
+    margin-right: 20px;
+} 
+
+.checkout-food button{
+	background-color: #004d00;
+	padding: 15px 32px;
+	font-size: 0.9em;
+	border: none;
+	color: white;
+}
+
+.checkout-cancel button{
+    background-color: #004d00;
+	padding: 15px 32px;
+	font-size: 0.9em;
+	border: none;
+	color: white;
+}
+
+/* menue page footer */
+
+footer {
+	position: relative;
+	top:145px;
+	background-color: #333;
+	text-align: center;
+	padding: 60px;
+	color: white;
+}
+
+footer h3 {
+  font-size: 1.3vw;
+}
