@@ -4,40 +4,19 @@
     <title>login</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <link rel="stylesheet" href="style.css">
-    <style type="text/css">
-        #icon{
-            width:60%;
-            border-radius: 50%;
-        }
-        .login_center
-        {
-          border-radius: 3%;
-          padding-top: 40px;
-          padding-bottom: 40px;
-          margin: 0 auto;
-          width:30% /* value of your choice which suits your alignment */
-        }
-        
-    </style>
 </head>
 <body>
 <div class="container login_center border border-dark">
-    <div>
-        <img src="login.png" id="icon" alt="User Icon" />
-    </div>
+  <h1> Login </h1>
   <form>
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <label for="InputEmail1">Email address</label>
+      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      <label for="InputPassword1">Password</label>
+      <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
     </div>
     <button type="submit" class="btn btn-success">Submit</button>
   </form>

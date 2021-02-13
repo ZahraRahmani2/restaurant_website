@@ -132,6 +132,31 @@ footer h3 {
   font-size: 1.3vw;
 }
 
+/* sign up */
+
+.center_div
+{
+    border-radius: 3%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    width:30% 
+}
+
+/* login */
+#icon{
+  width:60%;
+  border-radius: 50%;
+}
+
+.login_center
+{
+  border-radius: 3%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  width:30% 
+}
 
 
 

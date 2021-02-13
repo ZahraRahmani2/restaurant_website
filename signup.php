@@ -5,21 +5,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-    <style type="text/css">
-      
-      .center_div
-      {
-          border-radius: 3%;
-          padding-top: 50px;
-          padding-bottom: 50px;
-          margin: 0 auto;
-          width:30% /* value of your choice which suits your alignment */
-      }
-      
-    </style>
 </head>
 <body>
 <div class="container center_div border border-dark">
+  <h1> Sign Up </h1>
   <form>
     <div class="form-group">
       <label for="exampleInputName1">Name</label>
