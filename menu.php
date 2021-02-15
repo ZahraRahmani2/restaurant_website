@@ -10,7 +10,7 @@
     </h1>
     <div class="content">
       <div class="menucolumn">
-        <img src="images/food1.PNG" alt="Food1"> 
+        <img src="images/Burger.PNG" alt="Food1"> 
         <h2> Burger</h2>
         <p><strong>Price: $15</strong></p>
       </div>
@@ -25,7 +25,7 @@
         <p><strong>Price: $20 </strong></p>
       </div>
       <div class="menucolumn">
-        <img src="images/food2.PNG" alt="Food4"><br>
+        <img src="images/Falafel.PNG" alt="Food4"><br>
         <h2> Falafel</h2>
         <p><strong>Price: $10 </strong></p>
       </div>

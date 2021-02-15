@@ -34,7 +34,7 @@
   <main>
     <div class="row">
       <div class="column">
-        <img src="images/food1.PNG" alt="Food1"> <br>
+        <img src="images/Burger.PNG" alt="Food1"> <br>
         <p> Burger</p>
       </div>
       <div class="column">
@@ -46,7 +46,7 @@
         <p> Spagathti</p>
       </div>
       <div class="column">
-        <img src="images/food2.PNG" alt="Food4"><br>
+        <img src="images/Falafel.PNG" alt="Food4"><br>
         <p> Falafel</p>
       </div>
     </div>
