@@ -1,62 +1,73 @@
-#foodOrderText {
-    position: relative;
-    text-align: center;
-    font-size: 3vw;
-    color: #004d00;
-    top: 150px;
-}
-.order-content {
+/* Food Menu Content */
+#food-menu{
 	position: relative;
-    top: 145px;
-    margin: auto;
-    width: 80%;
-    padding: 10px;
+	text-align: center;
+	font-size: 3vw;
+	color: #004d00;
+	top: 150px;
 }
 
-.order-details{
+.content {
 	position: relative;
-    border: 2px solid #73AD21;
-    padding: 5px;
+	top: 145px;
+	margin: auto;
+	width: 80%;
+	padding: 10px;
 }
-
-
-.order-details img {
+.menucolumn {
+	position: relative;
+	border: 2px solid #73AD21;
+	padding: 5px;
+}
+.menucolumn img {
 	width: 15%;
 	border-radius: 5px;
 }
-
-.order-details h2 {
+.menucolumn h2{
 	position: absolute;
-    font-size: 2vw;
-    right: 65%;
-    top: 10%;
+	font-size: 2vw;
+	right: 65%;
+	top: 10%;
 }
 
-.order-details p {
-    position: absolute;
-    font-size: 2vw;
-    right: 65%;
-    top: 40%;
+.menucolumn p{
+	position: absolute;
+	font-size: 2vw;
+	right: 65%;
+	top: 40%;
 }
 
-.order-content button {
-	float: right;
-    background-color: #004d00;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 0.875em;
-    cursor: pointer;
-    border-radius: 5px;
+/* Go to Home page button */
+.menucolumn button {
+  position: absolute;
+  right: 15%;
+  top: 30%;
+  background-color: #004d00;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 0.875em;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-/* footer index.php styles */
+#HomeButton {
+  background-color: #004d00;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 0.875em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* menue page footer */
 
 footer {
 	position: relative;
-	top:350px;
+	top:145px;
 	background-color: #333;
 	text-align: center;
 	padding: 60px;
@@ -66,4 +77,3 @@ footer {
 footer h3 {
   font-size: 1.3vw;
 }
-

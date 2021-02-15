@@ -22,9 +22,11 @@
     <div class="welcome">
       <h1>Welcome to <br><span>Leaf Restaurant</span></h1>
     </div>
-    <button class="btn">Order Now</button>
-  </section>
 
+    <a href="Order.php">
+        <button id="OrderButton">Order now</button>
+    </a>
+  </section>
   <?php include "nav.php"; ?>
       <!-- End of main nav -->
 

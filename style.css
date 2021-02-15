@@ -24,7 +24,7 @@
   font-size: 1.5em;
 }
 
-.banner .btn {
+a #OrderButton {
   position: absolute;
   left: 50%;
   top: 80%;

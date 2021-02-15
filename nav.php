@@ -6,6 +6,8 @@
     <li><a href="#location">Location</a></li>
     <li><a href="#about-us">About Us</a></li>
     <li><a href="#contact-us">Contact Us</a></li>
-    <li id="shopping-cart"><a href="#"><i class="fa fa-shopping-cart"></i>Shopping Cart</a></li>
+    <li><a href="login.php">Login </a></li>
+    <li><a href="signup.php">Sing Up</a></li>
+    <li id="shopping-cart"><a href="ShoppingCart.php"><i class="fa fa-shopping-cart"></i>Shopping Cart</a></li>
   </ul>
 </nav>
