@@ -1,7 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="Order.css">
+    <link rel="stylesheet" href="order.css">
   </head>
   <body>
     <?php include "header.php"; ?>

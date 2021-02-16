@@ -23,7 +23,7 @@
       <h1>Welcome to <br><span>Leaf Restaurant</span></h1>
     </div>
 
-    <a href="Order.php">
+    <a href="order.php">
         <button id="OrderButton">Order now</button>
     </a>
   </section>
