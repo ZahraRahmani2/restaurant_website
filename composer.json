@@ -1,8 +1,8 @@
 {
-    "name": "some/name",
-    "description": "Some description will be useful too!",
+    "name": "pacific/sierra75275",
+    "description": "zara website!",
     
     "require": {
-        "php": "7.4.9"
+        "php": "^7.4.0"
     }
 }
