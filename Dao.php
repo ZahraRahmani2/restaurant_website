@@ -1,22 +1,40 @@
 
 <?php 
-//Get Heroku ClearDB connection information
-$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL
-"));
-$cleardb_server   = $url["us-cdbr-east-03.cleardb.com"];
-$cleardb_username = $url["b53b15900c6ae4"];
-$cleardb_password = $url["4b376ff1"];
-$cleardb_port = $url["3306"];
-$cleardb_db       = substr($url["heroku_7876bf830b7489b"],1);
 
-try {
-    $pdo = new PDO("mysql:host=".$cleardb_server.";dbname=".$cleardb_db.':'.$cleardb_port, $cleardb_username, $cleardb_password);
-    echo "It worked";
+  $dsn = 'mysql:dbname=heroku_7876bf830b7489b;host=us-cdbr-east-03.cleardb.com';
+  $user = 'b53b15900c6ae4';
+  $password = '4b376ff1';
+  $port = "3306";
+
+    try {
+    $connection = new PDO($dsn.":".$port, $user, $password);
+        echo "It worked";
+    } catch (PDOException $e) {
+        echo 'Connection failed: ' . $e->getMessage();
+    }
+  
+
+
+
+
+
+
+// Get Heroku ClearDB connection information
+// $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL
+// "));
+// $cleardb_server   = $url["us-cdbr-east-03.cleardb.com"];
+// $cleardb_username = $url["b53b15900c6ae4"];
+// $cleardb_password = $url["4b376ff1"];
+// $cleardb_db       = substr($url["heroku_7876bf830b7489b"],1);
+
+// try {
+//     $pdo = new PDO("mysql:host=".$cleardb_server.";dbname=".$cleardb_db, $cleardb_username, $cleardb_password);
+//     echo "It worked";
     
-} catch (PDOException $e) {
-    echo "MyLastError!: " . $e->getMessage() . "<br/>";
-    die();
-}
+// } catch (PDOException $e) {
+//     echo "MyLastError!: " . $e->getMessage() . "<br/>";
+//     die();
+// }
 
 
 
