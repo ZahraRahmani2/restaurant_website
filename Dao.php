@@ -9,11 +9,11 @@ $cleardb_password = $url["4b376ff1"];
 $cleardb_db       = substr($url["heroku_7876bf830b7489b"],1);
 
 try {
-    $pdo = new PDO("mysql:host=".$cleardb_server.";dbname=".$cleardb_db.":".$cleardb_port, $cleardb_username, $cleardb_password);
+    $pdo = new PDO("mysql:host=".$cleardb_server.";dbname=".$cleardb_db, $cleardb_username, $cleardb_password);
     echo "it worked";
     
 } catch (PDOException $e) {
-    echo "MyError!: " . $e->getMessage() . "<br/>";
+    echo "MyLastError!: " . $e->getMessage() . "<br/>";
     die();
 }
 
