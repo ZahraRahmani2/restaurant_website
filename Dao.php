@@ -4,11 +4,11 @@ class Dao {
   public $dsn = 'mysql:dbname=zrahmani;host=127.0.0.1';
   public $user = 'zrahmani';
   public $password = 'My_personal_db5548';
-  //public $port = "3308";
+  public $port = "3308";
 
   private function getConnection () {
     try {
-      $connection = new PDO($this->dsn, $this->user, $this->password);
+      $connection = new PDO($this->dsn.':'.$this->port, $this->user, $this->password);
     } catch (PDOException $e) {
         echo 'Connection failed: ' . $e->getMessage();
     }
