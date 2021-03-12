@@ -16,6 +16,7 @@ header {
 }
 
 header h1 {
+  font-size: 2vw;
   color: white;
   border: 8px solid white;
   padding: 8px 12px;

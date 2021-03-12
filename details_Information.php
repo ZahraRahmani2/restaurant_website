@@ -24,7 +24,7 @@
 		  <label for="phone_number">Phone Number</label><br>
 		  <input type="text" class="form-control" id="phone_number" name="phone" value="(208) 919-4949">
 	    </div>
-		  <input type="submit" value="Payment">
+		  <input type="submit" value="Place Order">
 	</form> 
 </div>
 

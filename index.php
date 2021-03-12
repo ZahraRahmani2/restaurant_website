@@ -35,19 +35,19 @@
     <div class="row">
       <div class="column">
         <img src="images/Burger.PNG" alt="Food1"> <br>
-        <p> Burger</p>
+        <p><a href="menu.php">Burger</a></p>
       </div>
       <div class="column">
         <img src="images/Chicken_biryani.PNG" alt="Food2"><br>
-        <p> Chicken Biryani</p>
+        <p><a href="menu.php"> Chicken Biryani</a></p>
       </div>
       <div class="column">
         <img src="images/Spagathti.PNG" alt="Food3"><br>
-        <p> Spagathti</p>
+        <p><a href="menu.php">Spagathti</a></p>
       </div>
       <div class="column">
         <img src="images/Falafel.PNG" alt="Food4"><br>
-        <p> Falafel</p>
+        <p><a href="menu.php"> Falafel</p></a>
       </div>
     </div>
 
