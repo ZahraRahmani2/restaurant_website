@@ -3,13 +3,13 @@
 //Get Heroku ClearDB connection information
 $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL
 "));
-$cleardb_server   = $cleardb_url["localhost"];
-$cleardb_username = $cleardb_url["zrahmani"];
-$cleardb_password = $cleardb_url["My_personal_db5548"];
-$cleardb_db       = substr($cleardb_url["zrahmani"],1);
+$cleardb_server   = $url["127.0.0.1"];
+$cleardb_username = $url["zrahmani"];
+$cleardb_password = $url["My_personal_db5548"];
+$cleardb_db       = substr($url["zrahmani"],1);
 
 try {
-    $pdo = new PDO("mysql:host=$cleardb_server; dbname=$cleardb_db", $cleardb_username, $cleardb_password);
+    $pdo = new PDO("mysql:dbname=$cleardb_db;host=$cleardb_server", $cleardb_username, $cleardb_password);
     echo "it worked";
     
 } catch (PDOException $e) {
