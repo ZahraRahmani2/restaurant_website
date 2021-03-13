@@ -17,19 +17,14 @@
     ?>
     <div class="content">
 
-
-
-
-    <a href='delete_comment.php?id={$comment['comment_id']}'>X</a>
-
     <?php
       foreach($foods as $food){  
         echo "<div class=\"menucolumn\">
         <img src=". htmlspecialchars($food['images'])."> 
         <h2>". htmlspecialchars($food['foodName'])."</h2>
         <p><strong>Price: ". htmlspecialchars($food['price'])."</strong></p>
-        <form action=\"addToCart.php?id={$food['foodID']}\">
-          <input type=\"submit\" value=\"Add To Cart\" />
+        <form action=\"addToCart.php?id=". htmlspecialchars($food['foodID'])."\">
+          <input type=\"button\" value=\"Add To Cart\" />
         </form>    
       </div>";      
       }
