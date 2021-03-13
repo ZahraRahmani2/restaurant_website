@@ -38,4 +38,26 @@ public function getfoods () {
     }
     return $rows;
   }
+
+  public function addToCart ($id) {
+    $conn = $this->getConnection();
+    $saveQuery = "insert into shoppingcart (foodID)
+     values (:id)";
+    $q = $conn->prepare($saveQuery);
+    $q->bindParam(":id", $id);
+    $q->execute();
+  }
+
+  public function getCards () {
+    $connection = $this->getConnection();
+    try {
+      $rows = $connection->query("select * from shoppingcart join foods sc on sc.foodID=foods.foodID", PDO::FETCH_ASSOC);
+    } catch(Exception $e) {
+      echo print_r($e,1);
+      exit;
+    }
+    return $rows;
+  }
+  
+
 }
