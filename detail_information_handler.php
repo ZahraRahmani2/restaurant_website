@@ -1,6 +1,4 @@
 <?php
   
-  header('Location: details_Information.php');
-  echo "<h3>". $_POST['fname'].$_POST['lname']."we have recieved your order</h3>";
-  
-  exit;
+  if (count($_POST)>0) echo '<div id="form-submit-alert">'.$_POST['fname'].'we have recieved your order</div>'; ?>
+ 
