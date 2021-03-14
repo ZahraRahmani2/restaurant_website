@@ -23,9 +23,7 @@
         <img src={$food['images']}> 
         <h2> {$food['foodName']}</h2>
         <p><strong>Price: {$food['price']}</strong></p>
-        <form action=\"addToCart.php?id={$food['foodID']}\">
-          <input type=\"button\" value=\"Add To Cart\" />
-        </form>    
+        <a href='addToCart.php?id={$food['foodID']}'>add To Cart</button></a>   
       </div>";      
       }
     ?>
