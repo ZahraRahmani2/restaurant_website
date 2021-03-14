@@ -1,22 +1,30 @@
 <?php
 $errors=array();
-$username = $_POST['username'];
+// $username = $_POST['username'];
 
 if (strlen($_POST['username']) > 30) {
   $errors[] = "Sorry, your name is too long";
 }
 
+// $lastname = $_POST['lastname'];
+
+if (strlen($_POST['lastname']) > 30) {
+  $errors[] = "Sorry, your last name is too long";
+}
+
+$email = $_POST['email'];
+if (strlen($email) > 60) {
+  $errors[] = "Sorry, your email is too long";
+}
+
+if (strlen($_POST['phoneNumber']) > 10) {
+  $errors[] = "Sorry, your phone number is too long";
+}
+
+
+
 //Email for regular expression
 
-
-// function test_input($data) {
-//   $data = trim($data);
-//   $data = stripslashes($data);
-//   $data = htmlspecialchars($data);
-//   return $data;
-// }
-// $email = test_input($_POST["email"]);
-$email = $_POST["email"];
 if (!preg_match("/^\w+@\w+\.\w+$/",$email)) {
   $errors[] = "Sorry, only the name with the format mahdi@gmail.com is valid";
 }
