@@ -5,15 +5,9 @@
         document.getElementById('lname').value='';
         document.getElementById('email').value='';
         document.getElementById('phone_number').value='';
-        
-        function sleep (time) {
-            return new Promise((resolve) => setTimeout(resolve, time));
-        }
-        sleep(500).then(() => {
-            alert('Your order was recieved');
-        });
+        <h3> Your order was recieved </h3>
     </script>";
 
   header('Location: details_Information.php');
-  
+
   exit;
