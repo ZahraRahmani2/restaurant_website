@@ -23,7 +23,7 @@
         <img src={$food['images']}> 
         <h2> {$food['foodName']}</h2>
         <p><strong>Price: {$food['price']}</strong></p>
-        <a href='addToCart.php?id={$food['foodID']}'>add To Cart</button></a>   
+        <a href='addToCart.php?id={$food['foodID']}'><button>add To Cart</button></a>   
       </div>";      
       }
     ?>
