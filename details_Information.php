@@ -7,7 +7,7 @@
 
 <div class="Information">
 	<h1>Enter Your Information</h1>
-	<form id="form" action="detail_information_handler.php">
+	<form id="form">
 		<div class="form-group">
 		  <label for="fname">First name</label><br>
 		  <input type="text" class="form-control" id="fname" name="fname" placeholder="John">
@@ -25,8 +25,17 @@
 		  <input type="text" class="form-control" id="phone_number" name="phone" placeholder="(208) 919-4949">
 	    </div>
 		  <h3 id="message"></h3>
-		  <input type="submit" value="Place Order">
+		  <input type="submit" value="Place Order" onclick="myFunction()">
 	</form> 
+	<script>
+		function myFunction() {
+			document.getElementById('fname').value='';
+			document.getElementById('lname').value='';
+			document.getElementById('email').value='';
+			document.getElementById('phone_number').value='';
+			setTimeout(() => {  document.getElementById('message').innerHTML = 'Your order was recieved'; }, 5000);        
+		}
+</script>
 </div>
 
 </body>

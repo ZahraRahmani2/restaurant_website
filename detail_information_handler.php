@@ -5,7 +5,8 @@
         document.getElementById('lname').value='';
         document.getElementById('email').value='';
         document.getElementById('phone_number').value='';
-        document.getElementById('message').innerHTML = 'Your order was recieved';  
+        setTimeout(() => {  document.getElementById('message').innerHTML = 'Your order was recieved'; }, 5000);
+        
     </script>";
 
   header('Location: details_Information.php');
