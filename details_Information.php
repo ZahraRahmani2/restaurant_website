@@ -7,7 +7,7 @@
 
 <div class="Information">
 	<h1>Enter Your Information</h1>
-	<form id="form" action="detail_information_handler.php" method="get">
+	<form id="form" action="detail_information_handler.php" method="post">
 		<div class="form-group">
 		  <label for="fname">First name</label><br>
 		  <input type="text" class="form-control" id="fname" name="fname" placeholder="John">
@@ -24,7 +24,6 @@
 		  <label for="phone_number">Phone Number</label><br>
 		  <input type="text" class="form-control" id="phone_number" name="phone" placeholder="(208) 919-4949">
 	    </div>
-		  <h3 id="message"></h3>
 		  <input type="submit" value="Place Order">
 	</form> 
 </div>
