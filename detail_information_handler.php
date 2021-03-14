@@ -6,6 +6,7 @@
         document.getElementById('lname').value='';
         document.getElementById('email').value='';
         document.getElementById('phone_number').value='';
+        await sleep(5000);
         alert('$message');
         await sleep(5000);
     </script>";
