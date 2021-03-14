@@ -7,6 +7,7 @@
         document.getElementById('email').value='';
         document.getElementById('phone_number').value='';
         alert('$message');
+        await sleep(5000);
     </script>";
 
   header('Location: details_Information.php');
