@@ -1,9 +1,6 @@
 <?php
 $errors=array();
 $username = $_POST['username'];
-if (is_numeric($username)) {
-  $errors[] = "Sorry, invalid username - enter an alphabet character";
-}
 
 if (strlen($_POST['username']) > 30) {
   $errors[] = "Sorry, your name is too long";
@@ -25,7 +22,7 @@ if (!preg_match("/^\w+@\w+\.\w+$/",$email)) {
 }
 
 if (count($errors) > 0) {
-  echo "<pre>" . print_r($errors) . "</pre>";
+  echo "<pre>" . print_r($errors, 1) . "</pre>";
   exit;
 }
 
