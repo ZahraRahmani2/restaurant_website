@@ -42,8 +42,7 @@ public function getfoods () {
 
   public function addToCart ($id) {
     $conn = $this->getConnection();
-    $saveQuery = "insert into shoppingcart (foodID)
-     values (:id)";
+    $saveQuery = "insert into shoppingcart (foodID) values (:id)";
     $q = $conn->prepare($saveQuery);
     $q->bindParam(":id", $id);
     $q->execute();
