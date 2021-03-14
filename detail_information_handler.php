@@ -1,14 +1,5 @@
 <?php
-  echo "
-    <script type='text/javascript'>
-        document.getElementById('fname').value='';
-        document.getElementById('lname').value='';
-        document.getElementById('email').value='';
-        document.getElementById('phone_number').value='';
-        setTimeout(() => {  document.getElementById('message').innerHTML = 'Your order was recieved'; }, 5000);
-        
-    </script>";
-
   header('Location: details_Information.php');
-
+  echo "<h3>". $_GET['fname'].$_GET['lname']."we have recieved your order</h3>";
+  
   exit;
