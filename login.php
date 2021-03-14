@@ -6,6 +6,8 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- ^\w+@\w+\.\w+$        preg_match()-->
+
 <div class="container login_center border border-dark">
   <h1> Login </h1>
   <form>
