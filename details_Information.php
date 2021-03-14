@@ -7,7 +7,7 @@
 
 <div class="Information">
 	<h1>Enter Your Information</h1>
-	<form id="form1" action="/action_page.php">
+	<form id="form" action="detail_information_handler.php">
 		<div class="form-group">
 		  <label for="fname">First name</label><br>
 		  <input type="text" class="form-control" id="fname" name="fname" value="John">
