@@ -24,6 +24,7 @@
 		  <label for="phone_number">Phone Number</label><br>
 		  <input type="text" class="form-control" id="phone_number" name="phone" placeholder="(208) 919-4949">
 	    </div>
+		  <h3 id="message"></h3>
 		  <input type="submit" value="Place Order">
 	</form> 
 </div>

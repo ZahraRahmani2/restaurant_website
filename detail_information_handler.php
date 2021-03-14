@@ -5,7 +5,7 @@
         document.getElementById('lname').value='';
         document.getElementById('email').value='';
         document.getElementById('phone_number').value='';
-        <h3> Your order was recieved </h3>
+        document.getElementById('message').innerHTML = 'Your order was recieved';  
     </script>";
 
   header('Location: details_Information.php');
