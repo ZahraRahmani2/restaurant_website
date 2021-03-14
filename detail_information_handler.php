@@ -9,5 +9,5 @@
         alert('$message');
     </script>";
 
-  header('Location: details_Information');
+  header('Location: details_Information.php');
   exit;
