@@ -9,10 +9,9 @@ class Dao {
 
   private function getConnection () {
     try {
-    $connection = new PDO($this->dsn.":".$this->port, $this->user, $this->password);
-        echo "It worked";
+      $connection = new PDO($this->dsn.":".$this->port, $this->user, $this->password);
     } catch (PDOException $e) {
-        echo 'Connection failed: ' . $e->getMessage();
+      echo 'Connection failed: ' . $e->getMessage();
     }
     return $connection;
   }
@@ -53,7 +52,7 @@ public function getfoods () {
   public function getShoppingItems () {
     $connection = $this->getConnection();
     try {
-      $rows = $connection->query("select foodName, price from shoppingcart join foods sc on sc.foodID=foods.foodID", PDO::FETCH_ASSOC);
+      $rows = $connection->query("select foodName, price from shoppingcart sc join foods on foods.foodID=sc.foodID", PDO::FETCH_ASSOC);
     } catch(Exception $e) {
       echo print_r($e,1);
       exit;
