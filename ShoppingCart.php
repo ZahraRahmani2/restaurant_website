@@ -12,10 +12,21 @@
     <div class="checkout-content">
 
 		<div class="DeleteFood">
-			<h3>Biryani</h3>
-			<h3>Price: $ 20</h3>
-			<h3>Subtotal: $20</h3>
-			<button>Delete</button>
+
+			<?php
+				require_once 'Dao.php';
+				$dao = new Dao();
+				$shoppingitems = $dao->getShoppingItems();
+				$total=0;
+				foreach($shoppingitems as $item){  
+					echo "<h3>{$item['foodName']}</h3>
+					<h3>Price: {$item['price']}</h3>
+					<button>Delete</button>";
+					$total+=$item['price'];
+				}
+				echo "<h3>SubTotal:". $total."</h3>";
+			?>
+
 		</div>
 		<div class="checkout">
 			<a href="details_Information.php">
