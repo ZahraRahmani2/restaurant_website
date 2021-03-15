@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $errors=array();
 // $username = $_POST['username'];
 
@@ -24,15 +26,20 @@ $email = $_POST['email'];
 if (strlen($email) > 60) {
   $errors[] = "Sorry, your email is too long";
 }
-//Email for regular expression
 
 if (!preg_match("/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/",$email)) {
-  $errors[] = "Sorry, only the name with the format somename@sometext.com is valid";
+  $errors[] = "Sorry, only the email with the format yourname@domain.extension.(optional extension) is valid";
 }
 
 if (count($errors) > 0) {
   echo "<pre>" . print_r($errors, 1) . "</pre>";
+  $_SESSION['messages'] = $errors;
+  $_SESSION['class'] = "bad_mojo";
+  header('Location: signup.php');
   exit;
+} else {
+  $_SESSION['class'] = "positive_vibes";
+  $_SESSION['messages'] = array("Thanks for signing in!");
 }
 
 require_once 'Dao.php';

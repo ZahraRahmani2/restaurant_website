@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,6 +35,15 @@
       <input type="number" class="form-control" id="PhoneNumber" name="phoneNumber" placeholder="Phone Number">
     </div>
    
+    <?php
+    if (isset($_SESSION['messages'])) {
+      foreach ($_SESSION['messages'] as $message) {
+        echo "<div class='" . $_SESSION['class'] . " message'>{$message}</div>";
+      }
+    }
+    unset($_SESSION['messages']);
+    ?>
+
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
 </div>

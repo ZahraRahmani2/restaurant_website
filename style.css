@@ -143,6 +143,23 @@ footer h3 {
     width:30% 
 }
 
+.message {
+  border: 1px black solid;
+  margin: 10 10;
+  padding: 5 5;
+  width: 300px;
+  color: white;
+}
+
+.positive_vibes {
+  color: #1E9E1E;
+}
+
+.bad_mojo {
+  color: #B90000;
+}
+
+
 /* login */
 #icon{
   width:60%;
