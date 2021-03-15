@@ -30,7 +30,7 @@
 
 		<?php
 			if (isset($_SESSION['order_message'])) {
-				echo "<div class=" . $_SESSION['class']."></div>";
+				echo "<div class=" . $_SESSION['classname'].">".$_SESSION['order_message']."</div>";
 			}			
 			unset($_SESSION['order_message']);
 		?>
