@@ -5,30 +5,30 @@ $errors=array();
 // $username = $_POST['username'];
 
 if (strlen($_POST['username']) > 30) {
-  $errors[] = "Sorry, your name is too long";
+  $errors[] = "Username: Sorry, your name is too long";
 }
 
 // $lastname = $_POST['lastname'];
 
 if (strlen($_POST['lastname']) > 30) {
-  $errors[] = "Sorry, your last name is too long";
-}
-
-if (strlen($_POST['phoneNumber']) > 10) {
-  $errors[] = "Sorry, your phone number is too long";
+  $errors[] = "Last Name: Sorry, your last name is too long";
 }
 
 if (strlen($_POST['password']) > 20) {
-  $errors[] = "Sorry, your password is too long";
+  $errors[] = "Password: Sorry, your password is too long";
 }
 
 $email = $_POST['email'];
 if (strlen($email) > 60) {
-  $errors[] = "Sorry, your email is too long";
+  $errors[] = "Email length: Sorry, your email is too long";
 }
 
 if (!preg_match("/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/",$email)) {
-  $errors[] = "Sorry, only the email with the format yourname@domain.extension.(optional extension) is valid";
+  $errors[] = "Email Format: Sorry, only the email with the format yourname@domain.extension.(optional extension) is valid";
+}
+
+if (strlen($_POST['phoneNumber']) > 10) {
+  $errors[] = "Phone Number: Sorry, your phone number is too long";
 }
 
 if (count($errors) > 0) {

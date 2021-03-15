@@ -23,6 +23,10 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+.details_Info{
+	color: #004d00;
+}
+
 .Information{
 	width: 40%;
 	padding: 30px;

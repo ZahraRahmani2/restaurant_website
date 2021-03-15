@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <html>
   <head>
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,6 +27,13 @@
 		  <label for="phone_number">Phone Number</label><br>
 		  <input type="text" class="form-control" id="phone_number" name="phone" placeholder="(208) 919-4949">
 	    </div>
+
+		<?php
+			if (isset($_SESSION['order_message'])) {
+				echo "<div class=" . $_SESSION['class']."></div>";
+			}			
+			unset($_SESSION['order_message']);
+		?>
 		  <input type="submit" value="Place Order">
 	</form> 
 </div>

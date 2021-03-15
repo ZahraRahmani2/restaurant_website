@@ -1,4 +1,7 @@
 <?php
-  
-  if (count($_POST)>0) echo '<div id="form-submit-alert">'.$_POST['fname'].', we have recieved your order</div>'; ?>
+  session_start();
+  $_SESSION['order_message']="We have recieved your order";
+  $_SESSION['class']="details_Info";
+  header('Location: details_Information.php');
+  exit;
  
