@@ -30,11 +30,13 @@
 
 		<?php
 			if (isset($_SESSION['order_message'])) {
+				foreach ($_SESSION['order_message'] as $message) {
 				echo "<div class=" . $_SESSION['classname'].">".$_SESSION['order_message']."</div>";
-			}			
+				}
+			}
 			unset($_SESSION['order_message']);
 		?>
-		  <input type="submit" value="Place Order">
+		<input type="submit" value="Place Order">
 	</form> 
 </div>
 

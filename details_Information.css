@@ -22,9 +22,13 @@ input[type="submit"] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
-
-.details_Info{
-	color: #004d00;
+  
+.error_message {
+	color: #B90000;
+}
+  
+.order_recived{
+	color: #1E9E1E;
 }
 
 .Information{
