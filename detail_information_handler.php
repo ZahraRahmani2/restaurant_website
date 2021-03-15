@@ -32,7 +32,7 @@
     exit;
   } else {
     $_SESSION['classname']="order_recived";
-    $_SESSION['order_message']="We have recieved your order";
+    $_SESSION['order_message']=array("We have recieved your order");
   }
   
   header('Location: details_Information.php');
