@@ -31,7 +31,7 @@
 		<?php
 			if (isset($_SESSION['order_message'])) {
 				foreach ($_SESSION['order_message'] as $message) {
-				echo "<div class=" . $_SESSION['classname'].">".$_SESSION['order_message']."</div>";
+					echo "<div class='" . $_SESSION['classname']. " message'>{$message}</div>";
 				}
 			}
 			unset($_SESSION['order_message']);
